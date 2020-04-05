@@ -1,0 +1,8 @@
+FROM registry.k8s.example.com:5000/centos:7.7.1908
+
+MAINTAINER 汪浩浩-whh881114@gmail.com
+
+LABEL version="v1.0.0" description="centos7-apache24-php72环境。" by="汪浩浩"
+
+RUN yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+RUN yum -y install net-tools php72.x86_64 php72-build.x86_64 php72-php.x86_64 php72-php-ast.x86_64 php72-php-bcmath.x86_64 php72-php-brotli.x86_64 php72-php-channel-horde.noarch php72-php-cli.x86_64 php72-php-common.x86_64 php72-php-componere.x86_64 php72-php-dba.x86_64 php72-php-dbg.x86_64 php72-php-devel.x86_64 php72-php-embedded.x86_64 php72-php-enchant.x86_64 php72-php-fpm.x86_64 php72-php-gd.x86_64 php72-php-geos.x86_64 php72-php-gmp.x86_64 php72-php-horde-horde-lz4.x86_64 php72-php-imap.x86_64 php72-php-interbase.x86_64 php72-php-intl.x86_64 php72-php-ioncube-loader.x86_64 php72-php-json.x86_64 php72-php-ldap.x86_64 php72-php-libvirt.x86_64 php72-php-libvirt-doc.noarch php72-php-litespeed.x86_64 php72-php-lz4.x86_64 php72-php-maxminddb.x86_64 php72-php-mbstring.x86_64 php72-php-mysqlnd.x86_64 php72-php-oci8.x86_64 php72-php-odbc.x86_64 php72-php-opcache.x86_64 php72-php-pdo.x86_64 php72-php-pdo-dblib.x86_64 php72-php-pear.noarch
